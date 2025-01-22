@@ -1,0 +1,77 @@
+syntax = "proto3";
+
+package pizzarpc;
+
+message Pizza {
+    string name = 1;
+    string description = 2;
+    float price = 3;
+    repeated Topping toppings = 4;
+    BaseSauce base_sauce = 5;
+}
+
+enum BaseSauce {
+    TOMATO_SAUCE = 0;
+    WHITE_SAUCE = 1;
+    BURGER_SAUCE = 2;
+}
+
+enum Topping {
+    PEPPERONI = 0;
+    MUSHROOM = 1;
+    ONION = 2;
+    SAUSAGE = 3;
+    BACON = 4;
+    EXTRA_CHEESE = 5;
+    BLACK_OLIVES = 6;
+    GREEN_PEPPERS = 7;
+    PINEAPPLE = 8;
+    SPINACH = 9;
+    JALAPENOS = 10;
+    ARTICHOKE = 11;
+    ANCHOVIES = 12;
+    CHICKEN = 13;
+    BEEF = 14;
+    HAM = 15;
+    SALAMI = 16;
+    TOMATO = 17;
+    GARLIC = 18;
+    BASIL = 19;
+    OREGANO = 20;
+    PARSLEY = 21;
+    ROSEMARY = 22;
+    THYME = 23;
+    RED_PEPPER_FLAKES = 24;
+    BBQ_SAUCE = 25;
+    BUFFALO_SAUCE = 26;
+    RANCH = 27;
+    BLUE_CHEESE = 28;
+    PARMESAN = 29;
+    MOZZARELLA = 30;
+    CHEDDAR = 31;
+    FETA = 32;
+    GOAT_CHEESE = 33;
+    RICOTTA = 34;
+    PROVOLONE = 35;
+    SWISS = 36;
+    GORGONZOLA = 37;
+    PARMIGIANO_REGGIANO = 38;
+    ROMANO = 39;
+    PECORINO = 40;
+    GREEK = 41;
+    CAESAR = 42;
+    RANCH_DRESSING = 43;
+    ITALIAN_DRESSING = 44;
+    BALSAMIC_VINEGAR = 45;
+    OLIVE_OIL = 46;
+    RED_WINE_VINEGAR = 47;
+    WHITE_WINE_VINEGAR = 48;
+    BALSAMIC_GLAZE = 49;
+    HONEY_MUSTARD = 50;
+    THOUSAND_ISLAND = 51;
+    MAYO = 52;
+    KETCHUP = 53;
+    MUSTARD = 54;
+    BBQ = 55;
+    BUFFALO = 56;
+}

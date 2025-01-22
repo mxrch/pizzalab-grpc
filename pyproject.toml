@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "pizzalab"
+version = "0.1.0"
+description = ""
+authors = ["mxrch <kvwaljam@protonmail.ch>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+grpcio = "^1.69.0"
+grpcio-tools = "^1.69.0"
+grpc-interceptor = "^0.15.4"
+pydantic = "^2.10.5"
+rich = "^13.9.4"
+betterproto = {version = "^2.0.0b7", extras = ["compiler"]}
+grpcio-reflection = "^1.69.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
