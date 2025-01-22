@@ -34,6 +34,7 @@ Listing services :
 
 ```bash
 > grpcurl -vv -plaintext localhost:50051 list
+
 pizzarpc.PizzaService
 Timing Data: 11.5359ms
   Dial: 8.3544ms
@@ -44,6 +45,7 @@ Listing methods :
 
 ```bash
 > grpcurl -import-path protos/ -proto methods.proto -proto pizza.proto -vv -plaintext localhost:50051 list pizzarpc.PizzaService
+
 pizzarpc.PizzaService.GetMenu
 pizzarpc.PizzaService.OrderPizza
 Timing Data: 5.304ms
@@ -51,7 +53,7 @@ Timing Data: 5.304ms
 
 Executing a method :
 
-```json
+```bash
 > grpcurl -import-path protos/ -proto methods.proto -proto pizza.proto -vv -plaintext localhost:50051 pizzarpc.PizzaService/GetMenu
 
 Resolved method descriptor:
